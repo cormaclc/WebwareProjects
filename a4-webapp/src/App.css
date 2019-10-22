@@ -1,0 +1,4 @@
+.App {
+  animation: fadeIn 3s linear;
+  transition: visibility 3s linear;
+}

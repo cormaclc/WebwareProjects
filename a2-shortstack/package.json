@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "version": "",
+  "description": "",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "build-css": "node-sass --include-path public/sass --include-path node_modules public/sass/ -o public/css/",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start": "npm run build-css && node server.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "ejs": "^2.6.1",
+    "jquery": "^3.3.1",
+    "material-components-web": "^0.39.1",
+    "mongoose": "^5.2.12",
+    "store": "^2.0.12"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4"
+  }
+}

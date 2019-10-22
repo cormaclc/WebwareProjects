@@ -1,0 +1,36 @@
+body {
+  background: #f2f2f2;
+}
+
+#project-form-wrapper {
+  padding: 16px;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding: 16px;
+}
+
+
+#skills-div, #topics-div {
+  columns: 3;
+  column-fill: balance;
+}
+
+#skills-div label:first-child {
+  margin-top: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+
+#create-code-editor {
+  width: 100%;
+}

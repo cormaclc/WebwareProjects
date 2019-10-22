@@ -1,0 +1,260 @@
+:root {
+    --primary-clr: orange;
+    --primary-clr-dark: #e89400;
+    --background-clr: #f2f2f2;
+    --font-clr-dark: #333333;
+}
+
+#inbox {
+    background: var(--background-clr);
+}
+
+#message-display-container {
+    /*background: var(--background-clr;*/
+    background: white;
+    width: calc(100% - 300px);
+    height: 80vh;
+    overflow: auto;
+    padding: 1.5rem 2rem;
+    margin-top: 2.5rem;
+    box-sizing: border-box;
+}
+
+/* -------- Compose Button --------*/
+
+#compose-button {
+    color: var(--primary-clr);
+    /*background: var(--background-clr;*/
+    padding: 0 0.5rem;
+    display: flex;
+    /*align-content: flex-end;*/
+    justify-content: center;
+    font-weight: 200;
+    width: 80px;
+    height: 2.5rem;
+    position: absolute;
+    top: 0rem;
+    left: 310px;
+    z-index: 1;
+    /*box-sizing: border-box;*/
+}
+
+#compose-text {
+    line-height: 38px;
+    margin-left: 0.2rem;
+    font-size: 0.9rem;
+}
+
+#compose-button svg {
+    font-size: 0.6rem;
+    margin-top: 0.9rem;
+}
+
+#compose-button:hover {
+    background: #eaeaea;
+}
+
+/* -------- Inbox Header --------*/
+
+#inbox-text {
+    text-align: center;
+    color: white;
+    background: var(--primary-clr);
+    margin: 0;
+    position: fixed;
+    width: 300px;
+    z-index: 1;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inbox-text p {
+    margin-bottom: 0.5rem;
+}
+
+/* -------- Message Preview Container --------*/
+
+#message-block-container {
+    display: flex;
+    position: relative;
+}
+
+#message-container {
+    background: var(--background-clr);
+    /*background: white;*/
+    width: 300px;
+    min-width: 300px;
+    height: calc(80vh);
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 2.5rem;
+    border-right: 1px solid #c8c8c8;
+    box-sizing: border-box;
+}
+
+/* -------- Complete Message View --------*/
+
+.message-subject, .message-sender, .message-body, .message-date {
+    color: var(--font-clr-dark);
+    white-space: pre-wrap;      /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    word-wrap: break-word;      /* IE */
+}
+
+.message-subject {
+    font-size: 1.5rem;
+    /*margin-bottom: 2rem;*/
+}
+
+.break {
+    background: #c8c8c8;
+    width: 100%;
+    height: 1px;
+    margin: 0.5rem 0 0.7rem 0;
+    box-sizing: border-box;
+}
+
+.message-sender {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+}
+
+.from-span {
+    font-weight: normal;
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+.message-date {
+    color: #66667f;
+    font-size: 0.75rem;
+    margin-left: 2.4rem;
+}
+
+.message-body {
+    font-size: 0.9rem;
+    margin: 0.7rem  2.4rem 0 2.4rem;
+}
+
+/* -------- Message Composition --------*/
+
+#compose-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* .text {
+    font-family: sans-serif;
+    background: none;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--font-clr-dark);
+    box-sizing: border-box;
+}
+
+.text:focus {
+    outline:none;
+    border-color: var(--primary-clr);
+    transition: all 0.2s linear;
+} */
+
+/* #subject-field {
+    border: none;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+} */
+
+/* #compose-container textarea {
+    resize: none;
+    border: 1px solid var(--primary-clr);
+    height: 60%;
+    font-size: 0.95rem;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 1rem;
+} */
+
+#compose-container .text::placeholder {
+    font-size: 0.8rem;
+    color: #a6a6a6;
+}
+
+/* .form-group {
+    padding-left: 0.5rem;
+}
+
+.form-group .text{
+    width: calc(100% - 4.5rem);
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+}
+
+.form-group label {
+    color: var(--font-clr-dark);
+    font-size: 0.8rem;
+    font-weight: bold;
+} */
+
+.discard, .send {
+    /* padding: 0.6rem 1rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px; */
+    display: inline-block;
+}
+
+.discard {
+    background: #f4f4f4;
+    border-color: #f4f4f4;
+    color: var(--font-clr-dark);
+    margin-left: 0.5rem;
+}
+
+.discard:hover {
+    background: #eaeaea;
+    border-color: #eaeaea;
+    color: black;
+}
+
+.send {
+    background: var(--primary-clr);
+    border-color: var(--primary-clr);
+    color: white;
+}
+
+.send:hover {
+    background: var(--primary-clr-dark);
+    border-color: var(--primary-clr-dark);
+}
+
+/* -------- Scroll Bar --------*/
+
+/* width */
+#message-container::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+#message-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+#message-container::-webkit-scrollbar-thumb {
+    background: #c8c8c8;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#message-container::-webkit-scrollbar-thumb:hover {
+    background: #98a3a6;
+}

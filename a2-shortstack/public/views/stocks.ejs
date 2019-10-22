@@ -1,0 +1,80 @@
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="libs/c3.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/login.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/material.css">
+<link rel="stylesheet" type="text/css" href="libs/c3.css">
+
+<a id="logout" href="/" onclick="logout()" style="float: right; visibility: visible;">Logout</a>
+<h1 id="stock-page-header">View Your Stocks</h1>
+
+<div id="stocks-and-add">
+  <div id="stock-container"></div>
+
+  <div id="form">
+
+    <form id="add-stock" method="POST" class="form login" onsubmit="return appendID()">
+
+      <h1 id="add-stock-header">Add Stock</h1>
+      <div class="form__field">
+        <input class="username-field" id="ticker" type="text" name="ticker" class="form__input" placeholder="Ticker Symbol" required>
+      </div>
+
+      <div class="form__field">
+        <input class="username-field" id="num-shares" type="text" name="num_-hares" class="form__input" placeholder="Number of Shares" required>
+      </div>
+
+      <div class="form__field">
+        <input class="username-field" id="bought-at" type="text" name="bought-at" class="form__input" placeholder="Bought At" required>
+      </div>
+
+      <div class="form__field">
+        <input type="submit" value="Add Stock">
+      </div>
+
+<!--
+      <div class="form__field">
+        <input id="ticker" type="text" name="ticker" placeholder="Ticker Symbol">
+      </div>
+
+
+      <div id="bought-shares">
+        <div class="form__field">
+          <input class="half-form-width" id="num-shares" type="text" name="num-shares" placeholder="Number of Shares">
+        </div>
+
+        <div class="form__field">
+          <input class="half-form-width" id="bought-at" type="text" name="bought-at" placeholder="Bought At">
+        </div>
+      </div>
+      <input type="submit" name="submit">
+    </form>
+    -->
+
+
+    </form>
+  </div>
+</div>
+
+<div id="stock-charts" class="mdc-elevation--z2">
+  <h2 class="mdc-typography--headline4">At a Glance</h2>
+  <div class="material-select">
+    <label for="chart-select" class="mdc-typography--body1">Viewing:</label>
+    <select id="chart-select">
+      <option value="gain_loss" selected>Gain / Loss</option>
+      <option value="total_value">Total Value</option>
+      <option value="investment_returns">Investment Returns</option>
+      <option value="history">Historical Gain / Loss</option>
+    </select>
+  </div>
+  <div id="gain-loss-chart"></div>
+  <div id="total-value-chart"></div>
+  <div id="investment-returns-chart"></div>
+  <div id="history-chart"></div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/stocks.js"></script>
+<script type="text/javascript" src="../js/scripts.js"></script>
+<script src="js/chart.js"></script>

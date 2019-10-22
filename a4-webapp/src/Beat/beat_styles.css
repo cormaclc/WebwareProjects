@@ -1,0 +1,60 @@
+
+
+.player {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.addToCart {
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+    max-height:40px;
+}
+
+.addToCart:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px
+}
+
+.beat_name {
+    color: white;
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.more_info {
+    display: flex;
+    color: white;
+}
+
+.artist, .price {
+    margin-top: 0;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.artist {
+    margin-right: 1em;
+}
+
+#main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.beat_wrapper {
+
+}

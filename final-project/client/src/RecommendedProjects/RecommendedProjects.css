@@ -1,0 +1,113 @@
+body {
+  background: #f2f2f2;
+}
+
+#recommended-projects-wrapper {
+  padding: 16px;
+  position: relative;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding: 16px;
+}
+
+.project-empty-state {
+  padding: 16px;
+  text-align: center;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.project {
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-size: 16px;
+  width: calc(100% - 32px);
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: cubic-bezier(0.4, 0.0, 0.2, 1) 180ms;
+  transition-property: box-shadow;
+  cursor: pointer;
+  background: white;
+}
+
+.project:hover, .project:focus {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+  outline: none;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-header * {
+  margin: 0;
+}
+
+.project-topics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 24px;
+}
+
+.project-topic, .project-skill {
+  background: #e0e0e0;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+  font-size: 12px;
+  margin: 0;
+  margin-right: 8px;
+  border-radius: 9999px;
+  margin-bottom: 8px;
+}
+
+.project-skill {
+  background: #555;
+  color: white;
+}
+
+.project-footer, .project-description {
+  padding-top: 32px;
+  margin: 0;
+}
+
+.project-footer, .project-membersNeeded {
+  display: flex;
+  flex-direction: row;
+  align-items: center;;
+  justify-content: flex-start;
+}
+
+.project-membersNeeded img {
+  margin-right: 4px;
+}
+
+.project-funded {
+  color: green;
+  font-weight: bold;
+}
+
+.project-footer p {
+  margin: 0;
+  margin-right: 16px;
+}
+
+.center {
+  text-align: center;
+}

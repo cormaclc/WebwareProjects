@@ -1,0 +1,148 @@
+/* Don't modify the style.css file! */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+#stock-page-header {
+  display: flex;
+  justify-content: center;
+}
+
+#add-stock-header {
+  font-size: 1.5em;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+}
+
+#bought-shares {
+  display: flex;
+}
+
+#add-stock {
+  width: 400px;
+}
+
+#ticker {
+  width: 100%;
+}
+
+.half-form-width {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+#stock-container {
+  width: 50%;
+}
+
+#stock-charts {
+  text-align: center;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 16px;
+  background-color: var(--loginInputBackgroundColor);
+}
+
+#chart-select {
+  margin-bottom: 16px;
+}
+
+.error-text {
+  opacity: 0;
+}
+
+#stocks-and-add {
+  display: flex;
+}
+
+#stock:hover {
+  cursor: pointer;
+}
+
+.colorVar {
+  color: red;
+}
+
+.colorVar.green {
+  color: var(--loginSubmitBackgroundColor);
+}
+
+#expanded-info {
+  display: none;
+  margin-left: 2em;
+}
+
+#expand {
+  display: inline;
+  background: #4db74d;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  margin-left: 1em;
+}
+
+.delete {
+  background: red;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  margin-left: 0.5em;
+}
+
+#form {
+  width: 50%;
+  justify-self: flex-end;
+  border: red;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-right: 1em;
+}
+
+#collapse {
+  display: none;
+  background: #4db74d;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  margin-left: 1em;
+}
+
+.material-select select {
+  border: none;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(0, 0, 0, 0.42);
+  color: rgba(0, 0, 0, 0.86);
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 12px 20px 12px 4px;
+  background-color: #f5f5f5;
+  border-radius: 4px 4px 0 0;
+}
+
+.material-select select:hover:not(:focus) {
+  border-bottom-color: rgba(0, 0, 0, 0.86);
+  background-color: #eee;
+}
+
+.material-select select:focus {
+  border-bottom-color: green;
+  border-bottom-width: 2px;
+  background-color: #eee;
+}
+
+.c3-title, .c3-chart-arcs-title, .tick, .c3-legend-item text  {
+  fill: white;
+}
+
+.c3-tooltip td {
+  color: black;
+}

@@ -1,0 +1,79 @@
+$body-color: #FFF;
+
+body, html {
+  // Ensure background fills entire page
+  height: 100%;
+  margin: 0;
+  color: $body-color;
+}
+
+.background {
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9144d03989599996b0108a4fa2f32dca&auto=format&fit=crop&w=1500&q=80") no-repeat center;
+  background-size: cover;
+  // Blur image
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.header {
+  position: absolute;
+  top: 0.5em;
+  right: 2em;
+}
+
+.header a {
+  color: white;
+  margin-left: 1em;
+  font-weight: 500;
+  opacity: 0.7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header a:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  top: 30%;
+  color: white;
+  // Put description below header
+  flex-direction: column;
+  line-height: 6em;
+}
+
+#app-name {
+  margin: auto;
+  font-weight: 400;
+  font-size: 4em;
+}
+
+.description {
+  margin: auto;
+  font-size: 1.75em;
+  font-weight: 300;
+}
+
+.content .start-btn {
+  border: 2px solid white;
+  margin: auto;
+  width: 10em;
+  margin-top: 1em;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 0;
+}
+
+.content .start-btn:hover {
+  color: black;
+  background: white;
+}
+
+

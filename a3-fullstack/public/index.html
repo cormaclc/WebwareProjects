@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>a3</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+  <h1>WPI Tutors</h1>
+<div id="content">
+  <form id="add-request">
+
+    <div class="form-field">
+      <label class="label" for="department">Department:</label>
+      <select id="department">
+        <option value="ae">AE</option>
+        <option value="bcb">BCB</option>
+        <option value="bb">BB</option>
+        <option value="bme">BME</option>
+        <option value="che">CHE</option>
+        <option value="ce">CE</option>
+        <option value="cs">CS</option>
+        <option value="ece">ECE</option>
+        <option value="ee">EE</option>
+        <option value="imgd">IMGD</option>
+        <option value="ma">MA</option>
+        <option value="me">ME</option>
+        <option value="ph">PH</option>
+        <option value="rbe">RBE</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <input id="course" type="number" placeholder="Course Number">
+    </div>
+
+    <div class="form-field">
+      <textarea id="details" rows="4" placeholder="Details"></textarea>
+    </div>
+
+    <div class="form-field">
+      <input id="email" type="email" placeholder="Email Address">
+    </div>
+
+    <button id="add">Submit</button>
+    <div id="edit-btns">
+      <button id="update">Update</button>
+      <button id="cancel">Cancel</button>
+    </div>
+
+  </form>
+
+  <div id="advert-div">
+    <div id="filter-div">
+      <button id="toggle-form">Hide Form</button>
+      <label class="label">Filter by Department:</label>
+      <input id="dept-filter" type="text" placeholder="Ex: CS">
+    </div>
+    <div id="advert-table">
+      <div id="table-headers">
+        <p class="dept-col"><b>Dept</b></p>
+        <p class="course-col"><b>Course</b></p>
+        <p class="details-col"><b>Details</b></p>
+        <p class="email-col"><b>Email</b></p>
+        <p class="delete-col"><b>Delete</b></p>
+        <p class="edit-col"><b>Edit</b></p>
+      </div>
+      <div id="adverts"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/scripts.js"></script>
+</html>
+

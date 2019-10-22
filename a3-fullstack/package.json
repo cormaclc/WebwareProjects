@@ -1,0 +1,13 @@
+{
+  "name": "a3-cormaclynchcollier",
+  "version": "0.1.0",
+  "description": "WPI CS 4241 a3",
+  "author": "Cormac Lynch-Collier",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "mongoose": "^5.2.15"
+  }
+}

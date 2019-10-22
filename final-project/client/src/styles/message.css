@@ -1,0 +1,64 @@
+.message {
+    background: #ffffff;
+    color: #333333;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+    padding: 0.9rem 1.3rem;
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.message:hover {
+    background: #eaeaea;
+}
+
+.message p {
+    margin: 0 0 0.2rem;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.message a {
+    position: absolute;
+    top: 0.85em;
+    right: 0.5em;
+    color: var(--primary-clr);
+}
+
+.delete-button {
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    color: var(--primary-clr-dark);
+}
+
+.sender-preview {
+    font-size: 1.05rem;
+    width: calc(100% - 2rem);
+}
+
+.subject-preview {
+    font-size: 0.8rem;
+    width: calc(100% - 3rem);
+}
+
+.body-preview {
+    width: calc(100% - 1rem);
+}
+
+.message .body-preview, .message .date-preview {
+    color: #66667f;
+    font-size: 0.7rem;
+}
+
+.date-preview {
+    position: absolute;
+    top: calc(50% - (0.7rem / 2));
+    right: 8px;
+    /*width: 3.5rem;*/
+}
+

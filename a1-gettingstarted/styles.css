@@ -1,0 +1,65 @@
+body {
+    margin: 50px 10% 50px 10%;
+    font-family: 'Raleway', sans-serif;
+}
+
+#technologies {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-flow: row wrap;
+    color: white;
+}
+
+#less {
+    display: none;
+    list-style: none;
+    margin-left: 2.5em;
+}
+
+#less:hover {
+    cursor: pointer;
+}
+
+#more {
+    display: inline;
+    margin-left: 2.5em;
+}
+
+#more:hover {
+    cursor: pointer;
+}
+
+.second {
+    display: none;
+}
+
+.tech-green, .tech-yellow, .tech-red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 30%;
+    margin: 1rem;
+}
+
+.tech-green {
+    background-color: green;
+}
+
+.tech-yellow {
+    background-color: #FFCC00;
+}
+
+.tech-red {
+    background-color: red;
+}
+
+.tech-title {
+    display: inline;
+}
+
+.tech-experience {
+    display: none;
+    padding: 1em;
+}

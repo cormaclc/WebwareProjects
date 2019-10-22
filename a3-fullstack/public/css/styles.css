@@ -1,0 +1,163 @@
+body {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    background-color: #99192B;
+    color: white;
+}
+
+input, select, textarea, #add {
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 200;
+    background-color: #272727;
+    border: none;
+    color: white;
+}
+
+::placeholder {
+    color: #939393;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    border: none;
+}
+
+#add, #cancel, #update {
+    width: 30%;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    background-color: #272727;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#add {
+    margin-left: 35%;
+}
+
+#cancel {
+    margin-left: .5em;
+}
+
+#update {
+    margin-right: .5em;
+}
+
+#add-request {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-right: 1em;
+}
+
+.form-field {
+    display: flex;
+    font-size: 16px;
+}
+
+.label {
+    margin-right: 10px;
+}
+
+#advert-div {
+    width: 75%;
+}
+
+#advert-table {
+    border: 2px solid #939393;
+    text-align: center;
+    background-color: #272727;
+}
+
+.delete-button, .edit-button {
+    color: white;
+    border-radius: 5px;
+}
+
+.delete-button {
+    background-color: red;
+}
+
+.edit-button {
+    background-color: green;
+}
+
+#update, #cancel {
+    display: none
+}
+
+#content {
+    display: flex;
+}
+
+#table-headers {
+    display: flex;
+    border-bottom: 2px solid #939393;
+}
+
+.course-col, .dept-col {
+    width: 8%;
+}
+
+.details-col {
+    width: 40%;
+    word-wrap: break-word;
+}
+
+.email-col {
+    width: 30%;
+}
+
+.delete-col, .edit-col {
+    width: 7%;
+}
+
+.dept-col, .course-col, .details-col, .email-col, .delete-col, .edit-col {
+    border-right: 1px solid #939393;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.edit-col {
+    border-right: none;
+}
+
+.row {
+    display: flex;
+}
+
+#filter-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+#dept-filter {
+    width: 10%;
+    margin-bottom: 0;
+}
+
+#toggle-form {
+    color: white;
+    background-color: #272727;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-right: 1em;
+    border-radius: 5px;
+}
+
+#edit-btns {
+    display: flex;
+    justify-content: center;
+}
