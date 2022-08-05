@@ -8,6 +8,6 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "mongoose": "^5.2.15"
+    "mongoose": "^5.7.5"
   }
 }
